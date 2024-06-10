@@ -19,11 +19,11 @@ function TinyCarousel({ slides }) {
       <div>
         <div className="centerImg">
           <img src={slides[slideIndex]["img"]} />
-          <span className="carousel-title">
-            <img src={BGTitle} />
-            <h3>{slides[slideIndex]["title"]}</h3>
-          </span>
         </div>
+        <span className="carousel-title">
+          <img src={BGTitle} />
+          <h3>{slides[slideIndex]["title"]}</h3>
+        </span>
         <p>{slides[slideIndex]["description"]}</p>
       </div>
       <a
