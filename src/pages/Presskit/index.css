@@ -1,0 +1,7 @@
+#presskit {
+  display: flex;
+  align-items: center;
+  font-size: 64px;
+  height: 800px;
+  justify-content: center;
+}
