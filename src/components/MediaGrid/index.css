@@ -1,0 +1,36 @@
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 450px);
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 56px 0px;
+  position: relative;
+  border-radius: 25px;
+  grid-gap: 50px;
+  margin: 100px;
+}
+
+.media img {
+  cursor: pointer;
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 4/3;
+  position: relative;
+  box-shadow: 20px 10px 5px rgb(29, 27, 27);
+  transition: width 0.2s ease-in-out;
+  border: 10px solid #c95fe3;
+  border-radius: 17px;
+}
+
+.media img:hover {
+  width: 110%;
+}
+
+.media h3 {
+  font-size: 36px;
+  margin: 5px 0;
+}
+
+.media p {
+  font-size: 24px;
+}

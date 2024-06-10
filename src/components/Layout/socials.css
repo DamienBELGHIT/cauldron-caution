@@ -1,0 +1,21 @@
+#socials {
+  position: fixed;
+  width: 80px;
+  bottom: 0;
+  z-index: 11;
+  background-color: #45234fb8;
+  padding: 10px;
+  border-top-right-radius: 10px;
+}
+
+#socials svg {
+  opacity: 0.5;
+  font-size: 50px;
+  padding: 2px;
+  transition: font-size 0.2s ease-in-out;
+}
+
+#socials svg:hover {
+  opacity: 1;
+  font-size: 64px;
+}

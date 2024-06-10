@@ -1,0 +1,138 @@
+#up-section img {
+  width: 100%;
+  min-height: 1000px;
+  object-fit: cover;
+}
+
+#up-section .topImg {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+
+#up-section .green-btn {
+  position: absolute;
+  z-index: 4;
+  left: 100px;
+  top: 400px;
+  transform: scale(1.5);
+}
+
+.parallax {
+  background-image: url("../../assets/img/Title.png");
+
+  min-height: 1000px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#logo {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 70px auto 0;
+  width: 800px;
+}
+
+#summary {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+article h3 {
+  font-size: 32px;
+  color: #80e332;
+  text-align: center;
+}
+
+section {
+  margin: 100px 0;
+}
+
+.cardShowcase {
+  rotate: -10deg;
+  max-width: 20%;
+  object-fit: contain;
+  height: fit-content;
+}
+
+.cardShowcase ~ .cardShowcase {
+  rotate: 10deg;
+}
+
+#medias .trailer {
+  display: flex;
+  justify-content: center;
+}
+
+#medias .trailer iframe {
+  border: 10px solid #c95fe3;
+  border-radius: 17px;
+}
+
+#medias .gallery {
+  display: flex;
+}
+
+#downPage {
+  margin: 0;
+  width: 100%;
+  height: 640px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#downPage img {
+  width: 64px;
+}
+
+#downPage > .BG {
+  background-image: url("../../assets/img/Bushes.png");
+  background-size: 100% 640px;
+  position: absolute;
+  width: 100%;
+  height: 640px;
+  transform: translateY(10px);
+}
+
+#downPage > .icon-btn {
+  font-size: 48px;
+  z-index: 1;
+  margin: 10px 0;
+}
+
+#downPage > .icon-btn svg {
+  font-size: 48px;
+}
+
+@media only screen and (max-width: 767px) {
+  #logo {
+    width: 80%;
+  }
+
+  #downPage > .icon-btn {
+    font-size: 32px;
+  }
+
+  #up-section .green-btn {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  #up-section img {
+    min-height: 600px;
+  }
+
+  .parallax {
+    min-height: 600px;
+  }
+}

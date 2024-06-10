@@ -1,0 +1,31 @@
+footer {
+  bottom: 0;
+  left: 0;
+  font-size: 20px;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+  background-image: url("../../assets/img/FooterBG.png");
+  background-size: 300px 90px;
+}
+
+footer img {
+  width: 422px;
+}
+
+span.blockspam {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  footer {
+    font-size: 16px;
+  }
+
+  footer img {
+    width: 222px;
+  }
+}

@@ -1,0 +1,90 @@
+.tiny-carousel {
+  display: flex;
+  width: 95%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+
+.tiny-carousel h3 {
+  font-size: 32px;
+  color: #80e332;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.tiny-carousel > div {
+  background-color: #b7986a;
+  border: 4px #513e23 solid;
+  border-radius: 17px;
+  padding: 15px 5px;
+  height: 550px;
+  margin: 0 10px;
+}
+
+.tiny-carousel .centerImg > img {
+  width: 95%;
+  aspect-ratio: 1.5/1;
+  object-fit: cover;
+  border: 4px #824f13 solid;
+  border-radius: 17px;
+  margin: 0 20px 40px;
+}
+
+.carousel-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 300px auto;
+}
+
+.carousel-title img {
+  width: 550px;
+}
+
+.arrow-btn {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .carousel-title {
+    position: relative;
+    margin: 0;
+  }
+  .carousel-title img {
+    width: 100%;
+    transform: translateY(50%);
+  }
+  .tiny-carousel h3 {
+    width: 100%;
+  }
+  .arrow-btn img {
+    width: 64px;
+  }
+  .tiny-carousel .centerImg > img {
+    margin: 0;
+    width: 60%;
+  }
+  .tiny-carousel p {
+    margin: 50px 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .tiny-carousel h3 {
+    font-size: 20px;
+  }
+  .tiny-carousel div {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .tiny-carousel h3 {
+    font-size: 12px;
+  }
+}
