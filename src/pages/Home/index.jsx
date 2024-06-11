@@ -26,11 +26,19 @@ function Home() {
   const { targetId } = state || {}
 
   useEffect(() => {
+    medias.features.forEach((picture) => {
+      const img = new Image()
+      img.src = picture.img
+    })
+  }, [])
+
+  useEffect(() => {
     const el = document.getElementById(targetId)
     if (el) {
       el.scrollIntoView()
     }
   }, [targetId])
+
   return (
     <div id="main-section">
       <img id="logo" src={Logo} />
